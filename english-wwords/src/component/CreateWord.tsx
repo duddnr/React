@@ -16,7 +16,7 @@ export default function CreateWord() {
     function onSubmit(e : React.FormEvent) {
         e.preventDefault();
 
-        if(!isLoading && dayRef.current && engRef.current && korRef.current)
+        if(!isLoading && dayRef.current && engRef.current && korRef.current) // 값이 있을 때 동작함
         {
             setIsLoading(true);
             const day = dayRef.current.value;
